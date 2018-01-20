@@ -2,7 +2,7 @@
 {% block current_product %}current_page_item{% endblock %}
 
 {% block content %}
-<div class="content-base-center" style="margin: 0 auto; width: 1024px;  text-align: center;">
+<div class="content-base-center" style="margin: 0 auto; width: 100%;  text-align: center;">
 <div id="introdetails" style="height: auto;" class="story">
     <div class="inner-contents fr-view">
         <p>
@@ -52,9 +52,23 @@
                  class="fr-fic fr-dib"><img
                 src="https://wadizwww.imgix.net/ft/images/green001/2017/1212/20171212121306898_65.jpg?dpr=2&amp;auto=format,compress&amp;cs=tinysrgb&amp;gifq=70"
                 class="fr-fic fr-dib"></p>
-        <button class="btn btn-lg">구매하러 가기</button>
+        <div class="aligncenter" style="margin-bottom: 30px;">
+            <a class="dt-sc-button dt-sc-join-us" href="http://storefarm.naver.com/asadal/products/2001025456">구매하러 가기</a>
+        </div>
     </div>
 
 </div>
 </div>
+{% endblock %}
+
+{% block extrascripts %}
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function($){
+
+	"use strict";
+    $('a[data-hover="Products"]').parent().addClass('current_page_item');
+});
+
+</script>
 {% endblock %}
