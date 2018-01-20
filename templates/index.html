@@ -1,1 +1,12 @@
 {% extends "base.html" %}
+
+{% block extrascripts %}
+<script>
+jQuery.noConflict();
+jQuery(document).ready(function($){
+
+	"use strict";
+    $('a[data-hover="Home"]').parent().addClass('current_page_item');
+});
+</script>
+{% endblock %}

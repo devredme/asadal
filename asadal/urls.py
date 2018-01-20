@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from asadal.landing.views import IndexView
+from asadal.landing.views import *
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', IndexView.as_view())
+    url(r'^$', IndexView.as_view()),
+    url(r'^product/product1/$', ProductOne.as_view()),
+    url(r'^product/product2/$', ProductTwo.as_view())
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
