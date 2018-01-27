@@ -25,6 +25,6 @@ urlpatterns = [
     url(r'^product/product1/$', ProductOne.as_view()),
     url(r'^product/product2/$', ProductTwo.as_view()),
     url(r'^about/$', AboutView.as_view()),
-    url(r'^contactus/$', ContactUsView.as_view()),
+    url(r'^contact/$', ContactView.as_view()),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
