@@ -12,3 +12,9 @@ class ProductOne(TemplateView):
 
 class ProductTwo(TemplateView):
     template_name = 'product2.html'
+
+class AboutView(TemplateView):
+    template_name = 'about.html'
+
+class ContactUsView(TemplateView):
+    template_name = 'contactus.html'
