@@ -43,7 +43,7 @@
 	
 	/*----*****---- << 1.1. Body >> ----*****----*/
 		
-	body { font-weight:normal; font-size:13px; line-height:22px; background:#ffffff; color: #000000; }
+	body { margin:0 !important; font-weight:normal; font-size:13px; line-height:22px; background:#ffffff; color: #000000; }
 	
 	/*----*****---- << 1.2. Fonts >> ----*****----*/
 	
@@ -781,4 +781,16 @@
 	@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
 		#toTop { background-image:url(images/ui.totop@2x.png); background-size:40px 80px; }		
 		.breadcrumb, .breadcrumb.type2, .dark-skin .breadcrumb, .dark-skin .breadcrumb.type2 { background-attachment:scroll; }
+	}
+
+	.buy-button {
+	    position: fixed;
+	    width: 100%;
+	    background-color: #fff;
+	    bottom: 0;
+
+	}
+	.buy-button > .dt-sc-join-us {
+	width: 100%;
+	padding: 13px 0;
 	}
