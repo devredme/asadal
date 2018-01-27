@@ -402,7 +402,7 @@
 	#slider .dark, .dark-skin #slider .light { display: none;}
 	#slider .light, .dark-skin #slider .dark { display: block;}
 	
-	.dark-skin #slider::after, .dark-skin .breadcrumb::after {    background: url("images/slider-bottom-dark.png") no-repeat center center;}
+	.dark-skin #slider::after, .dark-skin .breadcrumb::after {    background: url("/static/images/landing.jpg") no-repeat center center;}
 		
 	.fullwidth-section { clear: both; float: left; margin: 0; padding: 0; width: 100%;}
 	.parallax { background-attachment: fixed; background-color: #000000; background-repeat: no-repeat; padding: 100px 0; margin: 0; color: #ffffff; position: relative;}	
@@ -429,14 +429,14 @@
 	.main-title span.fonts { font-size: 28px; font-weight: 400;}	
 	
 	.breadcrumb { background: url("/static/images/landing.jpg") no-repeat fixed; background-position: center bottom; padding: 200px 0; text-align: center;}
-	.dark-skin .breadcrumb { background: url("http://placehold.it/1920x1200&text=Breadcrumb+Image") no-repeat fixed; background-position: center bottom; padding: 200px 0; text-align: center;}
+	.dark-skin .breadcrumb { background: url("/static/images/landing.jpg") no-repeat fixed; background-position: center bottom; padding: 200px 0; text-align: center;}
 	.breadcrumb h2 { display: inline-block; font-size: 70px; font-weight: 700; position: relative; text-transform: uppercase;}
 	.breadcrumb h2 span.fonts { font-size: 62px; font-weight: 500;}
 	.breadcrumb h3 { float: left; font-size: 30px; width: 100%;}
 	.breadcrumb h2:after { border-bottom: 1px solid #000000; bottom: 0; content: ""; left: 0; margin: 0 auto; position: absolute; right: 0; width: 20%;}
 	
 	.breadcrumb.type2 { background: url("/static/images/landing.jpg") no-repeat fixed; background-position: center bottom;}
-	.dark-skin .breadcrumb.type2 { background: url("http://placehold.it/1920x1200&text=Blog+Detail+Breadcrumb+Image") no-repeat fixed; background-position: center bottom;}	
+	.dark-skin .breadcrumb.type2 { background: url("/static/images/landing.jpg") no-repeat fixed; background-position: center bottom;}
 	.breadcrumb.type2 h3 { font-size: 62px; font-weight: 700;}
 	.breadcrumb.type2 { padding: 250px 0 260px;}
 	.breadcrumb.type2 h4 { font-size: 62px; font-weight: 700;}
