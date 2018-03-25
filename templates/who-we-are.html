@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+
 {% block subheader %}
 <!--Subheader area - only for certain pages -->
             <div id="Subheader" style="background-image: url(/static/img/who_top_banner_bg_2.jpg);">
@@ -141,4 +142,11 @@
                 </div>
             </div>
         </div>
+{% endblock %}
+
+
+{% block extrascript %}
+<script>
+    $('#menu_about').addClass('current_page_item');
+</script>
 {% endblock %}
