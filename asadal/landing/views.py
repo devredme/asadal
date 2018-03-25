@@ -5,7 +5,10 @@ from .models import Contact
 
 
 class IndexView(TemplateView):
-    template_name = 'index.html'
+    template_name = 'index-extreme.html'
+
+class ProductMain(TemplateView):
+    template_name = 'product.html'
 
 
 class ProductOne(TemplateView):
@@ -15,10 +18,10 @@ class ProductTwo(TemplateView):
     template_name = 'product2.html'
 
 class AboutView(TemplateView):
-    template_name = 'about.html'
+    template_name = 'who-we-are.html'
 
 class ContactView(TemplateView):
-    template_name = 'contactus.html'
+    template_name = 'contact.html'
 
     def post(self, request, *args, **kwargs):
         name = request.POST.get('txtname', 'Unknown')
