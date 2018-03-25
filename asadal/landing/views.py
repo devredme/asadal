@@ -10,12 +10,17 @@ class IndexView(TemplateView):
 class ProductMain(TemplateView):
     template_name = 'product.html'
 
+class ProductDufflebag(TemplateView):
+    template_name = 'product/dufflebag.html'
 
-class ProductOne(TemplateView):
-    template_name = 'product1.html'
+class ProductRaincover(TemplateView):
+    template_name = 'product/raincover.html'
 
-class ProductTwo(TemplateView):
-    template_name = 'product2.html'
+class ProductTawoobagpack(TemplateView):
+    template_name = 'product/tawoobagpack.html'
+
+class ProductWaistbag(TemplateView):
+    template_name = 'product/waistbag.html'
 
 class AboutView(TemplateView):
     template_name = 'who-we-are.html'

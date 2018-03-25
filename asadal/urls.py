@@ -22,8 +22,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', IndexView.as_view()),
-    url(r'^product/product1/$', ProductOne.as_view()),
-    url(r'^product/product2/$', ProductTwo.as_view()),
+    url(r'^product/dufflebag/$', ProductDufflebag.as_view()),
+    url(r'^product/raincover/$', ProductRaincover.as_view()),
+    url(r'^product/tawoobagpack/$', ProductTawoobagpack.as_view()),
+    url(r'^product/waistbag/$', ProductWaistbag.as_view()),
     url(r'^product/$', ProductMain.as_view()),
     url(r'^about/$', AboutView.as_view()),
     url(r'^contact/$', ContactView.as_view()),
