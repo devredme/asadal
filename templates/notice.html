@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block subheader %}
+<div id="Subheader" style="background-image: url(/static/img/who_top_banner_bg.jpg);">
+                <div class="container">
+                    <div class="column one">
+                        <h1 class="title">Notice</h1>
+                    </div>
+                </div>
+            </div>
+{% endblock %}
+
+
+{% block main %}
+<!-- Main Content -->
+        <div id="Content">
+            <div class="content_wrapper clearfix bg_white">
+                <div class="sections_group">
+                    <div class="entry-content">
+
+                        <div class="section full-width no-margin-h" style="padding-top:120px; padding-bottom:20px; ">
+                            <div class="section_wrapper clearfix">
+                                <div class="items_group clearfix items_group_product">
+                                    <table class="table simple">
+                                        <thead>
+                                            <tr>
+                                                <th>no.</th>
+                                                <th>title</th>
+                                                <th>date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for notice in notices %}
+
+                                            <tr>
+                                                <td>{{ notice.id }}</td>
+                                                <td><a href="/notice/{{ notice.id | slugify }}/">{{ notice.title }}</a></td>
+                                                <td>{{notice.date_created}}</td>
+                                            </tr>
+
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+
+{% block extrascript %}
+<script>
+    $('#menu_notice').addClass('current_page_item');
+</script>
+{% endblock %}

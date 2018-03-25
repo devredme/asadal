@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
 from django.views.generic.base import TemplateView
-from .models import Contact
+from .models import Contact, Notice
 
 
 class IndexView(TemplateView):
@@ -39,3 +39,19 @@ class ContactView(TemplateView):
         )
         result.save()
         return super(ContactView, self).get(request, *args, **kwargs)
+
+class NoticeView(TemplateView):
+    template_name = 'notice.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(NoticeView, self).get_context_data(**kwargs)
+        context['notices'] = Notice.objects.all().order_by('-id')
+        return context
+
+class NoticeDetail(TemplateView):
+    template_name = 'notice_detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(NoticeDetail, self).get_context_data(**kwargs)
+        context['notice'] = Notice.objects.get(id=kwargs['pk'])
+        return context

@@ -28,6 +28,8 @@ urlpatterns = [
     url(r'^product/waistbag/$', ProductWaistbag.as_view()),
     url(r'^product/$', ProductMain.as_view()),
     url(r'^about/$', AboutView.as_view()),
+    url(r'^notice/$', NoticeView.as_view()),
+    url(r'^notice/(?P<pk>\d+)/$', NoticeDetail.as_view()),
     url(r'^contact/$', ContactView.as_view()),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
